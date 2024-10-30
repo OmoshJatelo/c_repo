@@ -6,13 +6,13 @@ int main(){
     srand(time(0));   //srand(time(0))
     int secreteNum= rand()%10 +9;
     int rounds = 0;
-    int srounds= 0;      
+    int user_rounds= 0;      
     int totalScore =0;
     int userInput; //lucky number
     int remainder;
     printf("\nenter the number of rounds you want to play:\n ");
-    scanf("%d", &srounds);
-    rounds+=srounds;
+    scanf("%d", &user_rounds);
+    rounds+=user_rounds;
 
 
     while (rounds>=1){
@@ -26,7 +26,7 @@ int main(){
             
         }
         else if(remainder%2==0){
-            printf("Bingo! You smashed it. you have received additional three points\n\n");
+            printf("\nBingo! You smashed it. you have received additional three points\n\n");
             totalScore+=3;
 
         }
